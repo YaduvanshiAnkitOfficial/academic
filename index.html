@@ -158,34 +158,34 @@
         function validateContact() {
 	        var valid = true;	
         	$(".demoInputBox").css('background-color','');
-        	$(".info").html('');
+        	// $(".info").html('');
 	
         	if(!$("#userName").val()) {
-		        $("#userName-info").html("(Your name is required.)");
+		        // $("#userName-info").html("(Your name is required.)");
         		$("#userName").css('background-color','#F3E1E1');
 			$("#userName").css('border-color','#e60000');
 		        valid = false;
         	}
 	        if(!$("#userEmail").val()) {
-        		$("#userEmail-info").html("(E-mail is required.)");
+        		// $("#userEmail-info").html("(E-mail is required.)");
 		        $("#userEmail").css('background-color','#F3E1E1');
 			$("#userEmail").css('border-color','#e60000');
         		valid = false;
         	}
 	        if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        		$("#userEmail-info").html("(A valid E-mail is required.)");
+        		// $("#userEmail-info").html("(A valid E-mail is required.)");
         		$("#userEmail").css('background-color','#F3E1E1');
 			$("#userEmail").css('border-color','#e60000');
 		        valid = false;
         	}
 	        if(!$("#subject").val()) {
-		        $("#subject-info").html("(Subject is required)");
+		        // $("#subject-info").html("(Subject is required)");
 		        $("#subject").css('background-color','#F3E1E1');
 			$("#subject").css('border-color','#e60000');
 		        valid = false;
         	}
 	        if(!$("#content").val()) {
-        		$("#content-info").html("(Please write some message before you send.)");
+        		// $("#content-info").html("(Please write some message before you send.)");
 		        $("#content").css('background-color','#F3E1E1');
 			$("#content").css('border-color','#e60000');
 		        valid = false;
